@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0; 
+    background-color: #ffffff;
+}
+
+.altura2 {
+    height: 100vh;
+    background-color: #005eff;
+}
+
+.altura3 {
+    height: 100vh;
+    background-color: #ff0015;
+}
+
+.caja1 {
+    background-color: aqua;
+    height: 10vh;
+}
+
+.caja2 {
+    height: 100vh;
+    background-color: #ffe600;
+}
+
+/*Ocultar caja azul*/
+@media (min-width: 100px) and (max-width: 768px) {
+    .altura2 {
+        display: none;
+    }
+  }
+
+/*Ocultar caja aqua*/
+@media (min-width: 769px) and (max-width: 4000px) {
+    .caja1 {
+        display: none;
+    }
+  }
+
+/*Ocultar caja amarilla lateral*/
+@media (min-width: 100px) and (max-width: 1199px) {
+    .caja2 {
+        display: none;
+    }
+  }
